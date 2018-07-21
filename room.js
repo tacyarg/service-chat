@@ -35,16 +35,11 @@ module.exports = function (Room) {
     methods.addMessage = function (message) {
         message.message = Emoji.shortnameToImage(message.message);
 
-        // var messages = Room('messages')
-        // messages.unshift(message)
-        // Room.set('messages', messages)
-        console.log('BEFORE', Room('messages'))
         Room.unshift('messages', message)
         while (Room('messages').length > 25) {
             Room.pop('messages')
         }
 
-        console.log('AFTER', Room('messages'))
         return Room
     }
 
