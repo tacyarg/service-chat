@@ -1,0 +1,20 @@
+{
+  "name": "chats",
+  "version": "1.0.0",
+  "description": "List all created rooms.\r > Returns array of roomids",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "emojione": "^3.1.7",
+    "highland": "^2.13.0",
+    "lodash": "^4.17.10",
+    "statesync": "^0.2.3",
+    "tape": "^4.9.1",
+    "uuid": "^3.3.2"
+  }
+}
